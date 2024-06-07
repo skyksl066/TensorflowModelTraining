@@ -1,0 +1,12 @@
+services:
+    TernsorFlow:
+        container_name: tensorflow
+        image: tensorflow/tensorflow:latest-gpu-py3
+        restart: unless-stopped
+        network_mode: "bridge"
+        ports:
+            - 6006:6006
+        tty: true
+        command: /bin/bash
+        volumes:
+            - ~/Docker/tensorflow:/tensorflow
