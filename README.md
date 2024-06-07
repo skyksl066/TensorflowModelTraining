@@ -12,8 +12,8 @@ This project uses a pre-trained VGG16 model to classify images. The model is fin
 ### Step 1: Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone git@github.com:skyksl066/TensorflowModelTraining.git
+cd TensorflowModelTraining
 ```
 
 ### Step 2: Build and start the Docker container
@@ -85,4 +85,3 @@ This will train the model and save it in TensorFlow.js format in the `tfjs_model
 - You can modify the model architecture by changing the layers added to `base_model` in `train.py`.
 
 This project is set up to use TensorFlow with GPU support. Make sure you have the necessary drivers and CUDA installed if you plan to use GPU acceleration.
-```
